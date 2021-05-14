@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html { /* SMOOTH SCROLL */
+  scroll-behavior: smooth;
+}
+
+article,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-top: solid 1px #444;
+  border-top-color: rgba(0, 0, 0, 0.25);
+
+  box-shadow: 0px 1px 0px 0px rgba(100, 100, 100, 0.2);
+  height: 1px;
+  margin: 3em 0;
+}
+
+/* NAVIGATION */
+#nav {
+  background-color: #282828;
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  cursor: default;
+  height: 3.5em;
+  line-height: 3.5em;
+  margin-bottom: 20px;
+  position: fixed; /* Set the navbar to fixed position */
+}
+
+#nav ul {
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+#nav li {
+  display: inline-block;
+  padding-left: 0;
+}
+
+#nav a {
+  transition: background-color 0.2s ease-in-out;
+  position: relative;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  font-weight: 600;
+  border-radius: 8px;
+  color: #fff;
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 0 1.25em;
+}
+
+#nav a:hover {
+  color: #fff !important;
+  background: #383838;
+}
+
+/* TOP */
+#top {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+#top .container {
+  width: 80%;
+}
+
+#top img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+
+#top .text p,
+#top .text h1,
+#top .text a {
+  font-size: 30px;
+  font-weight: 100;
+  color: #383838;
+}
+
+#top .text {
+  margin-top: 20px;
+}
+
+#top .btn {
+  margin: 40px 0;
+}
+
+/* BUTTON */
+.button {
+  width: 300px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  border: solid 1px #3498db;
+  background: #43b3e0;
+  border-radius: 8px;
+  text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5),
+    inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+.button:hover {
+  /*box-shadow: inset 0 0 60px #2980b9;*/
+  background-color: #43bff0;
+  cursor: pointer;
+}
+
+#b-work {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+#b-port {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+/* WORK */
+.work-text {
+  width: 60%;
+  display: block;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.work-text h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+}
+
+.work-text p {
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#home h2 {
+  color: #3696dc;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 10px;
+}
+
+#home p {
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#home ul li {
+  list-style: none;
+}
+
+#home {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+}
+
+#home .columns {
+  margin: 0 15px 25px;
+  box-shadow: 0 1px 3px rgb(0, 0, 0, 12), 0 1px 3px rgb(0, 0, 0, 24);
+  border: 1px solid #282828;
+  background: #fff;
+  /*border-radius: 10px;*/
+  flex-basis: 33%;
+}
+
+#home .card {
+  padding: 15px 25px;
+}
+#home img {
+  max-width: 100%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  #home {
+    flex-direction: column;
+  }
+}
+
+/* PORTFOLIO */
+.container-port {
+  width: 60%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  /*grid-template-rows: repeat(3, minmax(150px, auto));*/
+  grid-auto-rows: minmax(150px, auto);
+}
+
+.container-port div {
+  box-shadow: 0 1px 3px rgb(0, 0, 0, 12), 0 1px 3px rgb(0, 0, 0, 24);
+  border: 1px solid #282828;
+}
+
+.container-port img {
+  width: 100%;
+}
+
+.container-port div h1 {
+  padding: 20px 25px 10px 25px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.container-port div p {
+  padding: 10px 25px 20px 25px;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-port {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 900px) {
+  .container-port {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  

@@ -146,7 +146,29 @@
     </div>
 
     <div class="container-port">
-      <div>
+      <div class="cont">
+        <a href="#" class="image featured"
+          ><img src="img/news3.jpg" alt=""
+        /></a>
+        <h1>Live Chat</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum,
+          dolores.
+        </p>
+        <div class="btn-container">
+          <a href="#work-hr" class="btng"
+            ><button class="button-code">
+              <i id="git-btn" class="fab fa-github"></i> View Code
+            </button></a
+          >
+          <a href="#work-hr" class="btng"
+            ><button class="button-project">
+              <i class="fas fa-play-circle"></i> View Project
+            </button></a
+          >
+        </div>
+      </div>
+      <div class="cont">
         <a href="#" class="image featured"
           ><img src="img/news3.jpg" alt=""
         /></a>
@@ -156,17 +178,7 @@
           dolores.
         </p>
       </div>
-      <div>
-        <a href="#" class="image featured"
-          ><img src="img/news3.jpg" alt=""
-        /></a>
-        <h1>Live Chat</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum,
-          dolores.
-        </p>
-      </div>
-      <div>
+      <div class="cont">
         <a href="#" class="image featured"
           ><img src="img/news3.jpg" alt=""
         /></a>
@@ -188,16 +200,10 @@
     <!-- CONTACTO -->
     <div class="container-contact">
       <h2>Contact me</h2>
-      <form
-        id="form"
-      >
+      <form id="form">
         <input type="text" id="fromName" placeholder="Name" />
 
-        <input
-          type="text"
-          id="toName"
-          placeholder="E-mail"
-        />
+        <input type="text" id="toName" placeholder="E-mail" />
 
         <textarea
           type="text"
@@ -206,7 +212,12 @@
           cols="30"
           rows="10"
         ></textarea>
-        <input onclick="sendMAil()" type="button" value="Submit" id="btn-send" />
+        <input
+          onclick="sendMAil()"
+          type="button"
+          value="Submit"
+          id="btn-send"
+        />
       </form>
       <div id="social-media">
         <a href=""><i id="git" class="fab fa-github-square"></i></a>
@@ -216,11 +227,14 @@
       </div>
     </div>
     <script src="script.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_wlqlFHppsa4cce7as3Gj5");
-})();
-</script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_wlqlFHppsa4cce7as3Gj5");
+      })();
+    </script>
   </body>
 </html>

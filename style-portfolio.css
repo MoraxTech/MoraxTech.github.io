@@ -231,7 +231,7 @@ hr {
   grid-auto-rows: minmax(150px, auto);
 }
 
-.container-port div {
+.container-port .cont {
   box-shadow: 0 1px 3px rgb(0, 0, 0, 12), 0 1px 3px rgb(0, 0, 0, 24);
   border: 1px solid #282828;
 }
@@ -250,6 +250,56 @@ hr {
   padding: 10px 25px 20px 25px;
   font-size: 18px;
   text-align: center;
+}
+
+.btn-container {
+  border-style: none;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Boton para ver codigo */
+.button-code {
+  width: 160px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  border: solid 1px #2d3436;
+  background: #ffffff;
+  border-radius: 30px;
+  text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.button-code:hover {
+  /*box-shadow: inset 0 0 60px #2980b9;*/
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Boton para ver proyecto */
+.button-project {
+  width: 160px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f5f6fa;
+  border: solid 1px #2d3436;
+  background: #44bd32;
+  border-radius: 30px;
+  text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.button-project:hover {
+  /*box-shadow: inset 0 0 60px #2980b9;*/
+  background-color: #0984e3;
+  color: white;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -294,7 +344,8 @@ input,
 textarea {
   width: 50%;
   margin-bottom: 20px;
-  border-radius: 7px;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 #btn-send {

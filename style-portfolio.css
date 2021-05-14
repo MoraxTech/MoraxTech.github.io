@@ -18,6 +18,7 @@ section {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #f1f2f6;
 }
 
 a {
@@ -197,11 +198,11 @@ hr {
   display: flex;
   list-style: none;
 }
-
+/* Cajas de skills set */
 #home .columns {
   margin: 0 15px 25px;
-  /*box-shadow: 0 1px 3px rgb(0, 0, 0, 12), 0 1px 3px rgb(0, 0, 0, 24);
-  border: 0px solid #282828;*/
+  box-shadow: 0 1px 3px rgb(0, 0, 0, 12), 0 1px 3px rgb(0, 0, 0, 24);
+  border: 1px solid #282828;
   background: #fff;
   border-radius: 10px;
   flex-basis: 33%;

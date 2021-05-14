@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
 
-    <!-- CUSTOM CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style-portfolio.css" />
   </head>
   <body>
@@ -29,7 +29,7 @@
     <nav id="nav">
       <ul class="container">
         <li><a href="#">Top</a></li>
-        <li><a href="#home-hr">Work</a></li>
+        <li><a href="#home-hr">Skills</a></li>
         <li><a href="#work-hr">Portfolio</a></li>
         <li><a href="#port-hr">Contact</a></li>
       </ul>
@@ -46,18 +46,18 @@
           </div>
           <div class="text">
             <header>
-              <h1>Hi. I'm <strong>César Vega</strong>.</h1>
+              <h1>Hi. I'm <strong>César Octavio</strong>.</h1>
             </header>
             <p>
               And this is <strong>My Portfolio</strong>, where I will be sharing
               my personal projects related to <strong>Frontend</strong>,
               <strong>Backend</strong>, <strong>Databases</strong> and
-              <strong>OOP</strong>.
+              <strong>more!</strong>.
             </p>
           </div>
           <div class="btn">
             <a href="#home-hr" class="link"
-              ><button class="button">Learn about what I do</button></a
+              ><button class="button">Learn about what I can do</button></a
             >
           </div>
         </div>
@@ -65,53 +65,73 @@
     </article>
     <hr id="home-hr" />
 
-    <!-- Work -->
+    <!-- SKILLS SET -->
     <div class="work-text">
-      <h1>Here’s all the stuff I can do.</h1>
+      <h1>Skills Set</h1>
       <p>
-        All things mention and shown here are from my personal experience. If
-        something comes from formal experience. I´ll point it.
+        All things mention and shown here are from my personal skills set. These
+        are the programming languages and technologies that I can use.
       </p>
     </div>
 
     <div id="home" class="container">
       <div class="columns">
         <div class="card">
-          <h2>Frontend & Backend</h2>
-          <p>
-            Te amo. Não ligo para o quão imaturo posso ser, parecer. ... Amo o
-            seu sorriso, sempre que eu conto uma piada, amo seu olhar quando
-            você olha para mim, amo a sua boca quando ela esta próxima a minha,
-            te amo tanto que ate eu mesma duvido desse amor, pois um amor enorme
-            assim é possível?
-          </p>
+          <img class="dasimages" src="img/html.png" width="100%" />
         </div>
       </div>
       <div class="columns">
         <div class="card">
-          <h2>Databases</h2>
-          <p>
-            Te amo. Não ligo para o quão imaturo posso ser, parecer. ... Amo o
-            seu sorriso, sempre que eu conto uma piada, amo seu olhar quando
-            você olha para mim, amo a sua boca quando ela esta próxima a minha,
-            te amo tanto que ate eu mesma duvido desse amor, pois um amor enorme
-            assim é possível?
-          </p>
+          <img class="dasimages" src="img/js.png" width="100%" />
         </div>
       </div>
 
       <div class="columns">
         <div class="card">
-          <h2>Location</h2>
-          <p>
-            Não ligo para o quão imaturo posso ser, parecer. ... Amo o seu
-            sorriso
-          </p>
-          <img class="dasimages" src="img/uk2.png" width="100%" />
+          <img class="dasimages" src="img/css.png" width="100%" />
         </div>
       </div>
     </div>
 
+    <div id="home" class="container">
+      <div class="columns">
+        <div class="card">
+          <img class="dasimages" src="img/node.png" width="100%" />
+        </div>
+      </div>
+      <div class="columns">
+        <div class="card">
+          <img class="dasimages" src="img/Django.png" width="100%" />
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="card">
+          <img class="dasimages" src="img/python.png" width="100%" />
+        </div>
+      </div>
+    </div>
+
+    <div id="home" class="container">
+      <div class="columns">
+        <div class="card">
+          <img class="dasimages" src="img/postgre.png" width="100%" />
+        </div>
+      </div>
+      <div class="columns">
+        <div class="card">
+          <img class="dasimages" src="img/react2.png" width="100%" />
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="card">
+          <img class="dasimages" src="img/mongo.png" width="100%" />
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTON DE SKILLS SET -->
     <div id="b-work" class="btn">
       <a href="#work-hr" class="link"
         ><button class="button">See some of my recent work</button></a
@@ -122,10 +142,7 @@
     <!-- PORTFOLIO -->
     <div class="work-text">
       <h1>Here’s some sttuf I made recently.</h1>
-      <p>
-        These are some of my personal projects. I have made projects of
-        Frontend, Backend, Databases, JS and Python
-      </p>
+      <p>These are some of the projects that I have made.</p>
     </div>
 
     <div class="container-port">
@@ -167,5 +184,43 @@
       >
     </div>
     <hr id="port-hr" />
+
+    <!-- CONTACTO -->
+    <div class="container-contact">
+      <h2>Contact me</h2>
+      <form
+        id="form"
+      >
+        <input type="text" id="fromName" placeholder="Name" />
+
+        <input
+          type="text"
+          id="toName"
+          placeholder="E-mail"
+        />
+
+        <textarea
+          type="text"
+          id="msg"
+          placeholder="Type your message"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input onclick="sendMAil()" type="button" value="Submit" id="btn-send" />
+      </form>
+      <div id="social-media">
+        <a href=""><i id="git" class="fab fa-github-square"></i></a>
+        <a href=""><i id="linked" class="fab fa-linkedin"></i></a>
+        <a href=""><i id="face" class="fab fa-facebook-square"></i></a>
+        <a href=""><i id="twitter" class="fab fa-twitter-square"></i></a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_wlqlFHppsa4cce7as3Gj5");
+})();
+</script>
   </body>
 </html>
